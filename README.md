@@ -40,7 +40,7 @@ noteStore allows users to **create, view, update, and delete notes** with a secu
 - React.js
 - React Router
 - TailwindCSS / Bootstrap
-- Axios / Fetch API
+- Fetch API
 
 ### Backend
 
@@ -52,7 +52,7 @@ noteStore allows users to **create, view, update, and delete notes** with a secu
 
 - Git & GitHub
 - Postman
-- Vite / CRA
+- Vite 
 
 ## 📂 Folder Structure
 
@@ -69,7 +69,7 @@ noteStore/
 ```
 MONGO_URI=your-mongodb-uri
 JWT_SECRET=your-secret-key
-PORT=5000
+PORT=8000
 ```
 
 ## 🚀 Installation & Setup
@@ -108,12 +108,13 @@ npm start
 
 ### Notes
 
-| Method | Endpoint       | Description   |
-| ------ | -------------- | ------------- |
-| GET    | /api/notes     | Get all notes |
-| POST   | /api/notes     | Create a note |
-| PUT    | /api/notes/:id | Update a note |
-| DELETE | /api/notes/:id | Delete a note |
+| Method   | Endpoint              | Description   |
+| -------  | --------------------- | ------------- |
+| GET      | /api/notes            | Get all notes |
+| POST     | /api/notes            | Create a note |
+| PUT      | /api/notes/:id        | Update a note |
+| DELETE   | /api/notes/update/:id | Delete a note |
+| COMPLETE | /api/notes/:id        | Delete a note |
 
 ## 📌 Future Improvements
 
