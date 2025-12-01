@@ -108,13 +108,13 @@ npm start
 
 ### Notes
 
-| Method   | Endpoint              | Description   |
-| -------  | --------------------- | ------------- |
-| GET      | /api/notes            | Get all notes |
-| POST     | /api/notes            | Create a note |
-| PUT      | /api/notes/:id        | Update a note |
-| DELETE   | /api/notes/update/:id | Delete a note |
-| COMPLETE | /api/notes/:id        | Delete a note |
+| Method   | Endpoint              | Description     |
+| -------  | --------------------- | --------------  |
+| GET      | /api/notes            | Get all notes   |
+| POST     | /api/notes            | Create a note   |
+| PUT      | /api/notes/:id        | Update a note   |
+| DELETE   | /api/notes/update/:id | Delete a note   |
+| COMPLETE | /api/notes/:id        | Complete a note |
 
 ## 📌 Future Improvements
 
