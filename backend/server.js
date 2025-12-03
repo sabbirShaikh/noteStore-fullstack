@@ -18,6 +18,10 @@ app.use("/api/v1/user", userRouter)
 app.use("/api/v1/notes", notesRouter)
 
 
-app.listen(8000, () => {
-  console.log("server started at: http://localhost:8000")
-})
+// app.listen(8000, () => {
+//   console.log("server started at: http://localhost:8000")
+// })
+
+app.listen(8000, "0.0.0.0", () => {
+  console.log("Server running on 0.0.0.0:8000");
+});

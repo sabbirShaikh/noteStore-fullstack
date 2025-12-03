@@ -7,24 +7,20 @@ import Navbar from "./pages/Navbar";
 import LogoutConfirm from "./pages/LogoutConfirm";
 import ThemeContext from "./context/ThemeContext";
 import { useEffect } from "react";
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider, useAuth } from "./context/AuthContext";
+import About from "./pages/About";
 
 function App() {
+  const { isLogin } = useAuth();
   return (
     <>
-      <BrowserRouter>
-        <AuthProvider>
-          <ThemeContext>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<ViewNotes />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/logout" element={<LogoutConfirm />} />
-            </Routes>
-          </ThemeContext>
-        </AuthProvider>
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={isLogin ? <ViewNotes /> : <About />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<LogoutConfirm />} />
+      </Routes>
     </>
   );
 }
