@@ -23,7 +23,7 @@ export default function About() {
       <div className="max-w-5xl mx-auto space-y-14">
         {/* 🔥 HERO SECTION */}
         <div className={`p-10 rounded-3xl border shadow-lg ${boxBg}`}>
-          <h1 className="text-5xl font-extrabold text-center mb-4 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-extrabold text-center mb-4 bg-linear-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
             Welcome to NoteStore
           </h1>
 
